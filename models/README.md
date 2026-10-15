@@ -1,0 +1,1 @@
+当前权重与2026-10-16实机部署一致。PT和ONNX在current；K230权重与姿态融合参数在deployment/board_files/sdcard/vision_update_20261013。只保留一个正式版本，后续大文件建议放GitHub Releases。PT仅加载来自可信工程的文件。

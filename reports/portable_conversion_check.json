@@ -1,0 +1,18 @@
+{
+  "shape": {
+    "compiler": "2.11.0",
+    "sha256": "46281252eba36217654c482381d9779ca67ba9f54cca971dbc27b32ddf755a71",
+    "bytes": 5711736,
+    "matches_deployed_model": true,
+    "calibration_split": "train",
+    "calibration_images": 112
+  },
+  "pose": {
+    "compiler": "2.11.0",
+    "sha256": "b07c169eed2f15322124124747a6b5331274e2cfd2ac1b855433e4529c2a4937",
+    "bytes": 606440,
+    "matches_deployed_model": true,
+    "calibration_split": "train",
+    "calibration_images": 482
+  }
+}

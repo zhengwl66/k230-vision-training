@@ -1,0 +1,6 @@
+nncase==2.11.0
+numpy==1.26.4
+onnx==1.17.0
+onnxruntime==1.19.2
+Pillow==12.3.0
+# Install the official Windows nncase_kpu 2.11.0 wheel separately.

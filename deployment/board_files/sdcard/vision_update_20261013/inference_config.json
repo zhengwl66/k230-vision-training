@@ -1,0 +1,81 @@
+{
+  "version": "vision-supplement-20261015-v1",
+  "confidence": 0.7,
+  "nms_iou": 0.45,
+  "imgsz": 320,
+  "threshold_selected_from_test": false,
+  "input": "RGB centered letterbox320x320, pad114",
+  "kmodel_uint8_input": true,
+  "kmodel_normalizes_inside": true,
+  "nncase_version": "2.11.0",
+  "output_shape": [
+    1,
+    11,
+    2100
+  ],
+  "class_names": [
+    "hollow_cube",
+    "tetrahedron",
+    "pentagonal_prism",
+    "triangular_prism",
+    "cone",
+    "cylinder",
+    "hemisphere"
+  ],
+  "training_real_photo_dimensions": [
+    [
+      640,
+      480
+    ],
+    [
+      1280,
+      960
+    ]
+  ],
+  "camera_size": "Read actual RGB888 frame dimensions",
+  "shape_classes": 7,
+  "color_method": "White-tray reference, connected foreground, per-pixel chromaticity median, normalized Lab/CIEDE2000 prototypes; separate from YOLO",
+  "board_verified": true,
+  "model_sha256": "46281252eba36217654c482381d9779ca67ba9f54cca971dbc27b32ddf755a71",
+  "state_model": "state_model.json",
+  "state_algorithm": "pose-image-geometry-fusion-20261013-v1",
+  "state_model_version": "pose-supplement-20261015-v1",
+  "state_model_sha256": "3af9230dfef32f5557ca0966d1f5213b7d455bc24c887dbacfcd488886713c79",
+  "state_supported_classes": [
+    2,
+    3,
+    5
+  ],
+  "state_training_photos": 849,
+  "camera_configuration_changed": false,
+  "confidence_changed": false,
+  "state_kmodel_sha256": "b07c169eed2f15322124124747a6b5331274e2cfd2ac1b855433e4529c2a4937",
+  "state_image_classifier": "Image/geometry fusion for pentagonal and triangular prisms; geometry-only cylinder",
+  "posture_result": "2-frame confirmation; low evidence returns UNKNOWN; not a motion strategy update",
+  "selection": "Shape and pose model selection used validation only; final held-out test opened after selection",
+  "verification_scope": "PC held-out tests and official nncase2.11 simulator checks; physical preview and current sorting vision interface tested on three upright and lying objects.",
+  "additional_prior_live_crops": 5,
+  "new_pose_photos": 320,
+  "new_shape_photos": 842,
+  "original_camera_configuration_preserved": true,
+  "color_code_unchanged": true,
+  "color_algorithm_version": "white-lab-foreground-20261014-v1",
+  "color_profile_version": "white-lab-20261014-v1",
+  "color_updated_date": "2026-10-14",
+  "color_board_verified": true,
+  "color_board_verification_scope": "640x480 preview and original1280x960 jiance, current dark blue/light blue/purple, original and swapped positions; vision only",
+  "color_held_out_test_objects": 163,
+  "color_held_out_test_correct": 163,
+  "color_validation_objects": 178,
+  "color_train_objects": 425,
+  "color_accuracy_scope": "Current materials/lighting and historical held-out crops; correlated frames; not a guarantee for new materials/lighting; orange/cyan/neutral classes not calibrated by this update",
+  "color_unchanged_from": "white-lab-foreground-20261014-v1",
+  "board_ground_truth_accuracy_verified": true,
+  "board_preview_frames": 24,
+  "board_sorting_interface_frames": 24,
+  "board_verification_date": "2026-10-16",
+  "board_verification_scope": "Current user-confirmed pentagonal prism, triangular prism and cylinder, upright and lying with position swap; preview640x480 and current jiance1280x960; 12 frames per pose/interface, last9 assessed. Sorting upright at existing CONF_TH0.70; lying at existing PLAN_CONF_TH0.50. No mechanical actions or full sorting-cycle verification.",
+  "board_ground_truth_scope": "Three shapes and two states in current tray/lighting only; seven-class accuracy otherwise PC hold-outs.",
+  "sorting_confidence_current": 0.7,
+  "sorting_plan_confidence_current": 0.5
+}

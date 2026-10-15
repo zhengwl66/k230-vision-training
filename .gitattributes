@@ -1,0 +1,11 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.pt binary
+*.onnx binary
+*.kmodel binary
+*.yml text eol=lf
+licenses/*.txt text eol=lf
+# Preserve deployed files byte-for-byte (including their original line endings).
+deployment/board_files/** -text
